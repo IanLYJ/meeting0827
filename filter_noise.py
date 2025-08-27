@@ -101,8 +101,8 @@ def main():
     # Step 3: Apply Butterworth filter
     print("Step 3: Applying Butterworth filter...")
 
-    # signal_filtered = apply_butterworth_filter(signal_noisy, sampling_rate, cutoff_freq)
-    signal_filtered = apply_moving_average(signal_noisy, window_size)
+    signal_filtered = apply_butterworth_filter(signal_noisy, sampling_rate, cutoff_freq)
+    # signal_filtered = apply_moving_average(signal_noisy, window_size)
     
     # Step 4: Apply FFT to find main frequencies
     print("Step 4: Applying FFT to find main frequencies...")
